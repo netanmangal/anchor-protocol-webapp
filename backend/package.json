@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/netanmangal/anchor-protocol-webapp/backend",
+  "author": "Netan Mangal",
+  "license": "MIT",
+  "dependencies": {
+    "@anchor-protocol/anchor-earn": "^1.1.1",
+    "@anchor-protocol/anchor.js": "^3.0.1",
+    "@terra-money/terra.js": "^3.0.2",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
