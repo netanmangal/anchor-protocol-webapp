@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require('morgan');
+const cors = require("cors");
 const { CHAINS, NETWORKS, DENOMS } = require("@anchor-protocol/anchor-earn");
 
 const { anchorEarn } = require("./src/initiate-anchor");
@@ -15,6 +16,7 @@ app.use(express.urlencoded({    //for parsing application/x-www-form-urlencoded
     "extended": true
 }));
 app.use(morgan('tiny'));
+app.use(cors());
 
 app.get("/", (req, res, next) => {
     res.status(200).send("We are on homepage");
